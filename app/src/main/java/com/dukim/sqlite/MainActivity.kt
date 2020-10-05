@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val adapter = RecyclerAdapter()
 
         //조회한 데이터담기
+        adapter.helper = helper
         adapter.listData.addAll(helper.selectMemo())
 
         //메인 recyclerMemo컨트롤에 RecyclerAdapter담기(item_recycler)
